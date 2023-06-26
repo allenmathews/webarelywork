@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat', 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: #282828;
 }
 
@@ -10,30 +10,30 @@ header {
     color: whitesmoke;
 }
 
+.logo {
+    font-size: 18px;
+    font-weight: 700;
+}
+
 ul {
     display: flex;
-    background-color: #282828;
-    color: whitesmoke;
-    align-items: center;
-    font-family: 'Open Sans', sans-serif;
-    padding: 25px;
-    justify-content: flex-start;
     list-style-type: none;
+    align-items: center;
     margin: 0;
-    gap: 10px;
+    padding: 25px;
+    gap: 10px
 }
 
 li {
     cursor: pointer;
 }
 
-.logo {
-    font-size: 18px;
-    font-weight: 700;
-}
-
 .icon {
     width: 25px;
+}
+
+.align-right {
+    margin-left: auto;
 }
 
 h1 {
@@ -42,20 +42,55 @@ h1 {
     margin: 30px 25px;
 }
 
-.caption {
-    margin: 0px 25px;
-}
-
 .item {
-    border: red solid;
+    position: relative;
 }
 
 .item-img {
+    display: block;
     width: 100%;
-    height: auto;
-    flex-wrap: wrap;
 }
 
-.align-right {
-    margin-left: auto;
+.caption {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 0 25px;
+}
+
+.img-banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #cd6858;
+    color: whitesmoke;
+    padding: 10px;
+}
+
+button {
+    align-self: center;
+    border: none;
+    background-color: #cd6858;
+    color: whitesmoke;
+    padding: 10px 15px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.chatbox-bg {
+    position: fixed;
+    bottom: 6px;
+    right: 6px;
+    background-color: #dda15e;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px #999;
+    display: flex;
+}
+
+.chatbox-img {
+    margin: auto;
+    width: 50%;
 }
